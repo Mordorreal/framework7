@@ -1,5 +1,5 @@
 {
-  "name": "framework7",
+  "name": "framework7-karta",
   "scripts": {
     "build:dev": "cross-env-shell NODE_ENV=development \"gulp build-core && gulp phenome && gulp build-vue && gulp build-react\"",
     "build:prod": "cross-env-shell NODE_ENV=production \"gulp build-core && gulp phenome && gulp build-vue && gulp build-react\"",
@@ -88,5 +88,6 @@
     "run-sequence": "^2.2.1",
     "vue": "^2.5.17",
     "vue-template-compiler": "^2.5.17"
-  }
+  },
+  "version": "3.2.1"
 }
