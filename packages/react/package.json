@@ -1,6 +1,6 @@
 {
-  "name": "framework7-react",
-  "version": "3.2.1",
+  "name": "framework7-karta-react",
+  "version": "3.2.3",
   "description": "Build full featured iOS & Android apps using Framework7 & React",
   "main": "framework7-react.js",
   "jsnext:main": "framework7-react.esm.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/framework7io/framework7.git"
+    "url": "https://github.com/Mordorreal/framework7.git"
   },
   "keywords": [
     "react",
@@ -37,7 +37,7 @@
   "author": "Vladimir Kharlampidi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/framework7io/framework7/issues"
+    "url": "https://github.com/Mordorreal/framework7/issues"
   },
   "homepage": "http://framework7.io/react/",
   "peerDependencies": {

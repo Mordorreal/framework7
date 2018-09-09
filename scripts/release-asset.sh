@@ -30,7 +30,7 @@ done
 
 # Define variables.
 GH_API="https://api.github.com"
-GH_REPO="$GH_API/repos/framework7io/framework7"
+GH_REPO="$GH_API/repos/Mordorreal/framework7"
 GH_TAGS="$GH_REPO/releases/tags/$tag"
 AUTH="Authorization: token $github_api_token"
 WGET_ARGS="--content-disposition --auth-no-challenge --no-cookie"
@@ -54,6 +54,6 @@ eval $(echo "$response" | grep -m 1 "id.:" | grep -w id | tr : = | tr -cd '[[:al
 echo "Uploading asset... "
 
 # Construct url
-GH_ASSET="https://uploads.github.com/repos/framework7io/framework7/releases/$id/assets?name=$(basename $filename)"
+GH_ASSET="https://uploads.github.com/repos/Mordorreal/framework7/releases/$id/assets?name=$(basename $filename)"
 
 curl "$GITHUB_OAUTH_BASIC" --data-binary @"$filename" -H "Authorization: token $github_api_token" -H "Content-Type: application/octet-stream" $GH_ASSET

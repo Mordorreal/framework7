@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/framework7io/framework7.git"
+    "url": "https://github.com/Mordorreal/framework7.git"
   },
   "author": "Vladimir Kharlampidi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/framework7io/framework7/issues"
+    "url": "https://github.com/Mordorreal/framework7/issues"
   },
   "homepage": "http://framework7.io/",
   "browserslist": [

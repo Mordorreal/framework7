@@ -204,7 +204,8 @@ class F7ListItem extends React.Component {
       'media-item': isMedia,
       swipeout,
       'accordion-item': accordionItem,
-      'accordion-item-opened': accordionItemOpened
+      'accordion-item-opened': accordionItemOpened,
+      disabled: disabled && !(radio || checkbox)
     }, Mixins.colorClasses(props));
 
     if (divider || groupTitle) {

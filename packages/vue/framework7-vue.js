@@ -1,5 +1,5 @@
 /**
- * Framework7 Vue 3.2.1
+ * Framework7 Vue 3.2.3
  * Build full featured iOS & Android apps using Framework7 & Vue
  * http://framework7.io/vue/
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: August 31, 2018
+ * Released on: September 9, 2018
  */
 
 (function (global, factory) {
@@ -2460,7 +2460,7 @@
           stroke: borderColor,
           'stroke-width': borderWidth,
           'stroke-dasharray': length / 2,
-          'stroke-dashoffset': length / 2 * (progress - 1),
+          'stroke-dashoffset': length / 2 * (1 + progress),
           fill: borderBgColor ? 'none' : bgColor || 'none'
         }
       }), !semiCircle && borderBgColor && _h('circle', {
@@ -4387,7 +4387,8 @@
         'media-item': isMedia,
         swipeout: swipeout,
         'accordion-item': accordionItem,
-        'accordion-item-opened': accordionItemOpened
+        'accordion-item-opened': accordionItemOpened,
+        disabled: disabled && !(radio || checkbox)
       }, Mixins.colorClasses(props));
 
       if (divider || groupTitle) {
@@ -9710,7 +9711,7 @@
   };
 
   /**
-   * Framework7 Vue 3.2.1
+   * Framework7 Vue 3.2.3
    * Build full featured iOS & Android apps using Framework7 & Vue
    * http://framework7.io/vue/
    *
@@ -9718,7 +9719,7 @@
    *
    * Released under the MIT License
    *
-   * Released on: August 31, 2018
+   * Released on: September 9, 2018
    */
 
   var Plugin = {

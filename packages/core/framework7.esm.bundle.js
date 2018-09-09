@@ -1,5 +1,5 @@
 /**
- * Framework7 3.2.1
+ * Framework7 3.2.3
  * Full featured mobile HTML framework for building iOS & Android apps
  * http://framework7.io/
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: August 31, 2018
+ * Released on: September 9, 2018
  */
 
 import Template7 from 'template7';
@@ -52,13 +52,6 @@ import Actions from './components/actions/actions';
 import Sheet from './components/sheet/sheet';
 import Toast from './components/toast/toast';
 import Preloader from './components/preloader/preloader';
-import Progressbar from './components/progressbar/progressbar';
-import Sortable from './components/sortable/sortable';
-import Swipeout from './components/swipeout/swipeout';
-import Accordion from './components/accordion/accordion';
-import VirtualList from './components/virtual-list/virtual-list';
-import ListIndex from './components/list-index/list-index';
-import Timeline from './components/timeline/timeline';
 import Tabs from './components/tabs/tabs';
 import Panel from './components/panel/panel';
 import Card from './components/card/card';
@@ -74,22 +67,11 @@ import SmartSelect from './components/smart-select/smart-select';
 import Grid from './components/grid/grid';
 import Calendar from './components/calendar/calendar';
 import Picker from './components/picker/picker';
-import InfiniteScroll from './components/infinite-scroll/infinite-scroll';
-import PullToRefresh from './components/pull-to-refresh/pull-to-refresh';
-import Lazy from './components/lazy/lazy';
-import DataTable from './components/data-table/data-table';
-import Fab from './components/fab/fab';
 import Searchbar from './components/searchbar/searchbar';
 import Messages from './components/messages/messages';
 import Messagebar from './components/messagebar/messagebar';
 import Swiper from './components/swiper/swiper';
 import PhotoBrowser from './components/photo-browser/photo-browser';
-import Notification from './components/notification/notification';
-import Autocomplete from './components/autocomplete/autocomplete';
-import Tooltip from './components/tooltip/tooltip';
-import Gauge from './components/gauge/gauge';
-import Vi from './components/vi/vi';
-import Elevation from './components/elevation/elevation';
 import Typography from './components/typography/typography';
 
 if ("es" !== 'es') {
@@ -130,13 +112,6 @@ Framework7.use([
   Sheet,
   Toast,
   Preloader,
-  Progressbar,
-  Sortable,
-  Swipeout,
-  Accordion,
-  VirtualList,
-  ListIndex,
-  Timeline,
   Tabs,
   Panel,
   Card,
@@ -152,22 +127,11 @@ Framework7.use([
   Grid,
   Calendar,
   Picker,
-  InfiniteScroll,
-  PullToRefresh,
-  Lazy,
-  DataTable,
-  Fab,
   Searchbar,
   Messages,
   Messagebar,
   Swiper,
   PhotoBrowser,
-  Notification,
-  Autocomplete,
-  Tooltip,
-  Gauge,
-  Vi,
-  Elevation,
   Typography
 ]);
 
