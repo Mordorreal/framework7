@@ -24,7 +24,7 @@ const config = {
 
     // List Components
     // 'sortable',
-    // 'swipeout',
+    'swipeout',
     // 'accordion',
     // 'contacts-list',
     // 'virtual-list',
