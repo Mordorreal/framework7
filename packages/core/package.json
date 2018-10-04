@@ -1,5 +1,5 @@
 {
-  "name": "framework7",
+  "name": "framework7-karta",
   "version": "3.4.0",
   "description": "Full featured mobile HTML framework for building iOS & Android apps",
   "main": "js/framework7.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/framework7io/framework7.git"
+    "url": "https://github.com/Mordorreal/framework7.git"
   },
   "keywords": [
     "mobile",

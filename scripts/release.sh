@@ -78,15 +78,15 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   (
     (
       cd packages/core
-      tar -zcvf ../framework7.tar.gz ./*
+      tar -zcvf ../framework7-karta.tar.gz ./*
     )
     (
       cd packages/react
-      tar -zcvf ../framework7-react.tar.gz ./*
+      tar -zcvf ../framework7-karta-react.tar.gz ./*
     )
     (
       cd packages/vue
-      tar -zcvf ../framework7-vue.tar.gz ./*
+      tar -zcvf ../framework7-karta-vue.tar.gz ./*
     )
   )
 
@@ -95,13 +95,13 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 
   echo "Creating release"
   API_JSON=$(printf '{"tag_name": "v%s","name": "v%s","body": "Release of version %s","draft": false,"prerelease": false}' $VERSION $VERSION $VERSION)
-  curl --data "$API_JSON" https://api.github.com/repos/framework7io/framework7/releases?access_token=$token
+  curl --data "$API_JSON" https://api.github.com/repos/framework7io/Mordorreal/releases?access_token=$token
 
   # Upload assets
   echo "Uploading release assets"
-  source "scripts/release-asset.sh" github_api_token=$token tag=v$VERSION filename=./packages/framework7.tar.gz
-  source "scripts/release-asset.sh" github_api_token=$token tag=v$VERSION filename=./packages/framework7-react.tar.gz
-  source "scripts/release-asset.sh" github_api_token=$token tag=v$VERSION filename=./packages/framework7-vue.tar.gz
+  source "scripts/release-asset.sh" github_api_token=$token tag=v$VERSION filename=./packages/framework7-karta.tar.gz
+  source "scripts/release-asset.sh" github_api_token=$token tag=v$VERSION filename=./packages/framework7-karta-react.tar.gz
+  source "scripts/release-asset.sh" github_api_token=$token tag=v$VERSION filename=./packages/framework7-karta-vue.tar.gz
 
   # Remove generated assets
   rm -rf ./packages/*.tar.gz
