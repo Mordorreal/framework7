@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: September 28, 2018
+ * Released on: October 4, 2018
  */
 
 (function (global, factory) {
@@ -3738,12 +3738,6 @@
     var prototypeAccessors = { attrs: { configurable: true },classes: { configurable: true },slots: { configurable: true },refs: { configurable: true } };
 
     F7Link.prototype.onClick = function onClick (event) {
-      var self = this;
-
-      if (self.props.smartSelect && self.f7SmartSelect) {
-        self.f7SmartSelect.open();
-      }
-
       this.dispatchEvent('click', event);
     };
 
@@ -10858,7 +10852,7 @@
    *
    * Released under the MIT License
    *
-   * Released on: September 28, 2018
+   * Released on: October 4, 2018
    */
 
   var Plugin = {
