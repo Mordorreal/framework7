@@ -23,8 +23,8 @@ const config = {
     // 'progressbar',
 
     // List Components
+    'swipeout',
     // 'sortable',
-    // 'swipeout',
     // 'accordion',
     // 'contacts-list',
     // 'virtual-list',
