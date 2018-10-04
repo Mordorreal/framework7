@@ -1,5 +1,5 @@
 /**
- * Framework7 3.4.1
+ * Framework7 3.4.2
  * Full featured mobile HTML framework for building iOS & Android apps
  * http://framework7.io/
  *
@@ -5846,6 +5846,221 @@ html.with-modal-preloader .page-content {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+/* === Swipeout === */
+.swipeout {
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.swipeout-deleting {
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.swipeout-deleting .swipeout-content {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.swipeout-transitioning .swipeout-content,
+.swipeout-transitioning .swipeout-actions-right a,
+.swipeout-transitioning .swipeout-actions-left a,
+.swipeout-transitioning .swipeout-overswipe {
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-property: left, -webkit-transform;
+  transition-property: left, -webkit-transform;
+  transition-property: transform, left;
+  transition-property: transform, left, -webkit-transform;
+}
+.swipeout-content {
+  position: relative;
+  z-index: 10;
+}
+.swipeout-overswipe {
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-property: left;
+  transition-property: left;
+}
+.swipeout-actions-left,
+.swipeout-actions-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  direction: ltr;
+}
+.swipeout-actions-left > a,
+.swipeout-actions-right > a,
+.swipeout-actions-left > button,
+.swipeout-actions-right > button,
+.swipeout-actions-left > span,
+.swipeout-actions-right > span,
+.swipeout-actions-left > div,
+.swipeout-actions-right > div {
+  color: #fff;
+  background: #c7c7cc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  left: 0;
+}
+.swipeout-actions-left > a:after,
+.swipeout-actions-right > a:after,
+.swipeout-actions-left > button:after,
+.swipeout-actions-right > button:after,
+.swipeout-actions-left > span:after,
+.swipeout-actions-right > span:after,
+.swipeout-actions-left > div:after,
+.swipeout-actions-right > div:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 600%;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  pointer-events: none;
+}
+.swipeout-actions-right {
+  right: 0%;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.swipeout-actions-right > a:after,
+.swipeout-actions-right > button:after,
+.swipeout-actions-right > span:after,
+.swipeout-actions-right > div:after {
+  left: 100%;
+  margin-left: -1px;
+}
+.swipeout-actions-left {
+  left: 0%;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.swipeout-actions-left > a:after,
+.swipeout-actions-left > button:after,
+.swipeout-actions-left > span:after,
+.swipeout-actions-left > div:after {
+  right: 100%;
+  margin-right: -1px;
+}
+.ios .swipeout-actions-left > a,
+.ios .swipeout-actions-right > a,
+.ios .swipeout-actions-left > button,
+.ios .swipeout-actions-right > button,
+.ios .swipeout-actions-left > span,
+.ios .swipeout-actions-right > span,
+.ios .swipeout-actions-left > div,
+.ios .swipeout-actions-right > div {
+  padding: 0 30px;
+  color: #fff;
+}
+.ios .swipeout-actions-left .swipeout-delete,
+.ios .swipeout-actions-right .swipeout-delete {
+  background: #ff3b30;
+}
+.ios .swipeout-actions-left > a.color-black,
+.ios .swipeout-actions-right > a.color-black,
+.ios .swipeout-actions-left > button.color-black,
+.ios .swipeout-actions-right > button.color-black,
+.ios .swipeout-actions-left > span.color-black,
+.ios .swipeout-actions-right > span.color-black,
+.ios .swipeout-actions-left > div.color-black,
+.ios .swipeout-actions-right > div.color-black {
+  background-color: #000000;
+}
+.ios .swipeout-actions-left > a.color-blue,
+.ios .swipeout-actions-right > a.color-blue,
+.ios .swipeout-actions-left > button.color-blue,
+.ios .swipeout-actions-right > button.color-blue,
+.ios .swipeout-actions-left > span.color-blue,
+.ios .swipeout-actions-right > span.color-blue,
+.ios .swipeout-actions-left > div.color-blue,
+.ios .swipeout-actions-right > div.color-blue {
+  background-color: #00d1e0;
+}
+.ios .swipeout-actions-left > a.color-gray,
+.ios .swipeout-actions-right > a.color-gray,
+.ios .swipeout-actions-left > button.color-gray,
+.ios .swipeout-actions-right > button.color-gray,
+.ios .swipeout-actions-left > span.color-gray,
+.ios .swipeout-actions-right > span.color-gray,
+.ios .swipeout-actions-left > div.color-gray,
+.ios .swipeout-actions-right > div.color-gray {
+  background-color: #c5d2d7;
+}
+.ios .swipeout-actions-left > a.color-green,
+.ios .swipeout-actions-right > a.color-green,
+.ios .swipeout-actions-left > button.color-green,
+.ios .swipeout-actions-right > button.color-green,
+.ios .swipeout-actions-left > span.color-green,
+.ios .swipeout-actions-right > span.color-green,
+.ios .swipeout-actions-left > div.color-green,
+.ios .swipeout-actions-right > div.color-green {
+  background-color: #1bbd8e;
+}
+.ios .swipeout-actions-left > a.color-orange,
+.ios .swipeout-actions-right > a.color-orange,
+.ios .swipeout-actions-left > button.color-orange,
+.ios .swipeout-actions-right > button.color-orange,
+.ios .swipeout-actions-left > span.color-orange,
+.ios .swipeout-actions-right > span.color-orange,
+.ios .swipeout-actions-left > div.color-orange,
+.ios .swipeout-actions-right > div.color-orange {
+  background-color: #f78000;
+}
+.ios .swipeout-actions-left > a.color-pink,
+.ios .swipeout-actions-right > a.color-pink,
+.ios .swipeout-actions-left > button.color-pink,
+.ios .swipeout-actions-right > button.color-pink,
+.ios .swipeout-actions-left > span.color-pink,
+.ios .swipeout-actions-right > span.color-pink,
+.ios .swipeout-actions-left > div.color-pink,
+.ios .swipeout-actions-right > div.color-pink {
+  background-color: #fa4b93;
+}
+.ios .swipeout-actions-left > a.color-red,
+.ios .swipeout-actions-right > a.color-red,
+.ios .swipeout-actions-left > button.color-red,
+.ios .swipeout-actions-right > button.color-red,
+.ios .swipeout-actions-left > span.color-red,
+.ios .swipeout-actions-right > span.color-red,
+.ios .swipeout-actions-left > div.color-red,
+.ios .swipeout-actions-right > div.color-red {
+  background-color: #ef5350;
+}
+.ios .swipeout-actions-left > a.color-white,
+.ios .swipeout-actions-right > a.color-white,
+.ios .swipeout-actions-left > button.color-white,
+.ios .swipeout-actions-right > button.color-white,
+.ios .swipeout-actions-left > span.color-white,
+.ios .swipeout-actions-right > span.color-white,
+.ios .swipeout-actions-left > div.color-white,
+.ios .swipeout-actions-right > div.color-white {
+  background-color: #ffffff;
+}
+.ios .swipeout-actions-left > a.color-yellow,
+.ios .swipeout-actions-right > a.color-yellow,
+.ios .swipeout-actions-left > button.color-yellow,
+.ios .swipeout-actions-right > button.color-yellow,
+.ios .swipeout-actions-left > span.color-yellow,
+.ios .swipeout-actions-right > span.color-yellow,
+.ios .swipeout-actions-left > div.color-yellow,
+.ios .swipeout-actions-right > div.color-yellow {
+  background-color: #f9c70b;
 }
 /* === Tabs === */
 .tabs .tab {

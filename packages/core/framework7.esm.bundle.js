@@ -1,5 +1,5 @@
 /**
- * Framework7 3.4.1
+ * Framework7 3.4.2
  * Full featured mobile HTML framework for building iOS & Android apps
  * http://framework7.io/
  *
@@ -52,6 +52,7 @@ import Actions from './components/actions/actions';
 import Sheet from './components/sheet/sheet';
 import Toast from './components/toast/toast';
 import Preloader from './components/preloader/preloader';
+import Swipeout from './components/swipeout/swipeout';
 import Tabs from './components/tabs/tabs';
 import Panel from './components/panel/panel';
 import Card from './components/card/card';
@@ -112,6 +113,7 @@ Framework7.use([
   Sheet,
   Toast,
   Preloader,
+  Swipeout,
   Tabs,
   Panel,
   Card,
