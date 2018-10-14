@@ -115,6 +115,7 @@ const config = {
       black: '#000000',
       blue: '#00d1e0',
       gray: '#c5d2d7',
+      gray22: '#383838',
       green: '#1bbd8e',
       orange: '#f78000',
       pink: '#fa4b93',
