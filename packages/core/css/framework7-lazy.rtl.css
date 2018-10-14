@@ -1,5 +1,5 @@
 /**
- * Framework7 3.4.2
+ * Framework7 3.4.3
  * Full featured mobile HTML framework for building iOS & Android apps
  * http://framework7.io/
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: October 4, 2018
+ * Released on: October 14, 2018
  */
 html {
   direction: rtl;
@@ -120,6 +120,9 @@ p {
 .ios .color-theme-gray a {
   color: #c5d2d7;
 }
+.ios .color-theme-gray22 a {
+  color: #383838;
+}
 .ios .color-theme-green a {
   color: #1bbd8e;
 }
@@ -146,6 +149,9 @@ p {
 }
 .ios a.color-gray {
   color: #c5d2d7;
+}
+.ios a.color-gray22 {
+  color: #383838;
 }
 .ios a.color-green {
   color: #1bbd8e;
@@ -1276,6 +1282,12 @@ html.with-statusbar.device-iphone-x .framework7-root {
 .ios .color-theme-gray.tabbar a.tab-link-active {
   color: #c5d2d7;
 }
+.ios .color-theme-gray22 .tabbar a.tab-link-active,
+.ios .color-theme-gray22 .tabbar-labels a.tab-link-active,
+.ios .color-theme-gray22.tabbar-labels a.tab-link-active,
+.ios .color-theme-gray22.tabbar a.tab-link-active {
+  color: #383838;
+}
 .ios .color-theme-green .tabbar a.tab-link-active,
 .ios .color-theme-green .tabbar-labels a.tab-link-active,
 .ios .color-theme-green.tabbar-labels a.tab-link-active,
@@ -1323,6 +1335,10 @@ html.with-statusbar.device-iphone-x .framework7-root {
 .ios .tabbar-labels.color-gray a.tab-link-active,
 .ios .tabbar.color-gray a.tab-link-active {
   color: #c5d2d7;
+}
+.ios .tabbar-labels.color-gray22 a.tab-link-active,
+.ios .tabbar.color-gray22 a.tab-link-active {
+  color: #383838;
 }
 .ios .tabbar-labels.color-green a.tab-link-active,
 .ios .tabbar.color-green a.tab-link-active {
@@ -3232,6 +3248,9 @@ html.device-pixel-ratio-3 .ios li:last-child li .item-inner:after {
 .ios .color-theme-gray .list-button {
   color: #c5d2d7;
 }
+.ios .color-theme-gray22 .list-button {
+  color: #383838;
+}
 .ios .color-theme-green .list-button {
   color: #1bbd8e;
 }
@@ -3276,6 +3295,15 @@ html.device-pixel-ratio-3 .ios li:last-child li .item-inner:after {
 .ios .list .item-link.color-gray,
 .ios .list li.color-gray .item-link {
   color: #c5d2d7;
+}
+.ios .list .list-button.color-gray22,
+.ios .list li.color-gray22 .list-button,
+.ios .links-list li.color-gray22 a,
+.ios .simple-list li.color-gray22,
+.ios .links-list a.color-gray22,
+.ios .list .item-link.color-gray22,
+.ios .list li.color-gray22 .item-link {
+  color: #383838;
 }
 .ios .list .list-button.color-green,
 .ios .list li.color-green .list-button,
@@ -3377,6 +3405,9 @@ html.device-pixel-ratio-3 .ios li:last-child li .item-inner:after {
 }
 .ios .badge.color-gray {
   background-color: #c5d2d7;
+}
+.ios .badge.color-gray22 {
+  background-color: #383838;
 }
 .ios .badge.color-green {
   background-color: #1bbd8e;
@@ -3633,6 +3664,36 @@ button {
 .ios .color-theme-gray .button.button-small-ios.button-fill-ios.active-state {
   color: #c5d2d7;
   border: 2px solid #c5d2d7;
+  background-color: transparent;
+}
+.ios .color-theme-gray22 .button {
+  border-color: #383838;
+  color: #383838;
+}
+.ios .color-theme-gray22 .button.active-state {
+  background: rgba(56, 56, 56, 0.15);
+}
+.ios .color-theme-gray22 .button.button-active,
+.ios .color-theme-gray22 .button.tab-link-active,
+.ios .color-theme-gray22 .button.button-fill,
+.ios .color-theme-gray22 .button.button-fill-ios {
+  color: #fff;
+}
+.ios .color-theme-gray22 .button.button-active,
+.ios .color-theme-gray22 .button.tab-link-active {
+  background: #383838;
+}
+.ios .color-theme-gray22 .button.button-fill,
+.ios .color-theme-gray22 .button.button-fill-ios {
+  background: #383838;
+  border-color: transparent;
+}
+.ios .color-theme-gray22 .button.button-small.button-fill.active-state,
+.ios .color-theme-gray22 .button.button-small-ios.button-fill.active-state,
+.ios .color-theme-gray22 .button.button-small.button-fill-ios.active-state,
+.ios .color-theme-gray22 .button.button-small-ios.button-fill-ios.active-state {
+  color: #383838;
+  border: 2px solid #383838;
   background-color: transparent;
 }
 .ios .color-theme-green .button {
@@ -3903,6 +3964,36 @@ button {
 .ios .button.color-gray.button-small-ios.button-fill-ios.active-state {
   color: #c5d2d7;
   border: 2px solid #c5d2d7;
+  background-color: transparent;
+}
+.ios .button.color-gray22 {
+  border-color: #383838;
+  color: #383838;
+}
+.ios .button.color-gray22.active-state {
+  background: rgba(56, 56, 56, 0.15);
+}
+.ios .button.color-gray22.button-active,
+.ios .button.color-gray22.tab-link-active,
+.ios .button.color-gray22.button-fill,
+.ios .button.color-gray22.button-fill-ios {
+  color: #fff;
+}
+.ios .button.color-gray22.button-active,
+.ios .button.color-gray22.tab-link-active {
+  background: #383838;
+}
+.ios .button.color-gray22.button-fill,
+.ios .button.color-gray22.button-fill-ios {
+  background: #383838;
+  border-color: transparent;
+}
+.ios .button.color-gray22.button-small.button-fill.active-state,
+.ios .button.color-gray22.button-small-ios.button-fill.active-state,
+.ios .button.color-gray22.button-small.button-fill-ios.active-state,
+.ios .button.color-gray22.button-small-ios.button-fill-ios.active-state {
+  color: #383838;
+  border: 2px solid #383838;
   background-color: transparent;
 }
 .ios .button.color-green {
@@ -4185,6 +4276,22 @@ i.icon {
 .ios a.link.color-gray .icon-prev {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D'12'%20height%3D'20'%20viewBox%3D'0%200%2012%2020'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M11.51840604%2010.5648622c-.0352203.05148305-.07573462.10050698-.1215468.14631917L2.5584348%2019.5496058c-.5830904.58309038-1.52656832.5849888-2.11643872-.00488163-.5857864-.58578644-.591222-1.53009836-.0048816-2.11643873L7.87507783%209.9903221.4431923%202.5584366C-.1398981%201.9753462-.1417965%201.0318683.448074.4419979c.5857864-.5857865%201.5300983-.591222%202.11643868-.0048816l8.83842442%208.8384244c.3526746.3526746.3939974.89699.11546894%201.2893215z'%20fill%3D'%23c5d2d7'%20fill-rule%3D'evenodd'%2F%3E%3C%2Fsvg%3E");
 }
+.ios .color-theme-gray22 .icon-forward,
+.ios .icon-forward.color-gray22,
+.ios a.link.color-gray22 .icon-forward,
+.ios .color-theme-gray22 .icon-next,
+.ios .icon-next.color-gray22,
+.ios a.link.color-gray22 .icon-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D'12'%20height%3D'20'%20viewBox%3D'0%200%2012%2020'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M.18261596%209.4221638c.0352203-.05148305.07573462-.10050698.1215468-.14631917L9.1425872.4374202c.5830904-.58309038%201.52656832-.5849888%202.11643872.00488163.5857864.58578644.591222%201.53009836.0048816%202.11643873L3.82594417%209.9967039l7.43188553%207.4318855c.5830904.5830904.5849888%201.5265683-.0048817%202.1164387-.5857864.5857865-1.5300983.591222-2.11643868.0048816L.2980849%2010.7114853c-.3526746-.3526746-.3939974-.89699-.11546894-1.2893215z'%20fill%3D'%23383838'%20fill-rule%3D'evenodd'%2F%3E%3C%2Fsvg%3E");
+}
+.ios .color-theme-gray22 .icon-back,
+.ios .icon-back.color-gray22,
+.ios a.link.color-gray22 .icon-back,
+.ios .color-theme-gray22 .icon-prev,
+.ios .icon-prev.color-gray22,
+.ios a.link.color-gray22 .icon-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D'12'%20height%3D'20'%20viewBox%3D'0%200%2012%2020'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M11.51840604%2010.5648622c-.0352203.05148305-.07573462.10050698-.1215468.14631917L2.5584348%2019.5496058c-.5830904.58309038-1.52656832.5849888-2.11643872-.00488163-.5857864-.58578644-.591222-1.53009836-.0048816-2.11643873L7.87507783%209.9903221.4431923%202.5584366C-.1398981%201.9753462-.1417965%201.0318683.448074.4419979c.5857864-.5857865%201.5300983-.591222%202.11643868-.0048816l8.83842442%208.8384244c.3526746.3526746.3939974.89699.11546894%201.2893215z'%20fill%3D'%23383838'%20fill-rule%3D'evenodd'%2F%3E%3C%2Fsvg%3E");
+}
 .ios .color-theme-green .icon-forward,
 .ios .icon-forward.color-green,
 .ios a.link.color-green .icon-forward,
@@ -4289,6 +4396,9 @@ i.icon {
 }
 .ios .icon.color-gray {
   color: #c5d2d7;
+}
+.ios .icon.color-gray22 {
+  color: #383838;
 }
 .ios .icon.color-green {
   color: #1bbd8e;

@@ -1,5 +1,5 @@
 /**
- * Framework7 React 3.4.2
+ * Framework7 React 3.4.3
  * Build full featured iOS & Android apps using Framework7 & React
  * http://framework7.io/react/
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: October 4, 2018
+ * Released on: October 14, 2018
  */
 
 (function (global, factory) {
@@ -10844,7 +10844,7 @@
   };
 
   /**
-   * Framework7 React 3.4.2
+   * Framework7 React 3.4.3
    * Build full featured iOS & Android apps using Framework7 & React
    * http://framework7.io/react/
    *
@@ -10852,7 +10852,7 @@
    *
    * Released under the MIT License
    *
-   * Released on: October 4, 2018
+   * Released on: October 14, 2018
    */
 
   var Plugin = {
